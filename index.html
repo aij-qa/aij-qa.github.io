@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ariful Islam Portfolio</title>
+<meta name="description" content="Ariful Islam, Senior SQA Engineer in Dhaka. Agentic test automation and quality strategy for enterprise retail POS.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ariful Islam · Senior SQA Engineer">
+<meta property="og:description" content="I build AI agents that test enterprise software. Manual and automation testing, team leadership and agentic QA for enterprise retail POS.">
+<meta property="og:url" content="https://aij404.github.io/">
+<meta property="og:image" content="https://aij404.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ariful Islam, Senior SQA Engineer at Fiftytwo Digital: I build AI agents that test enterprise software.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a test run you can read. Paper-light page, one centred column; the hero pairs the pitch with a POS receipt that prints the career as a passed run. */
+:root {
+  --paper: #f2f4f0;
+  --surface: #ffffff;
+  --sunk: #e8ece6;
+  --ink: #15201b;
+  --muted: #56655d;
+  --line: #d6ddd6;
+  --accent: #1d7a52;
+  --accent-ink: #ffffff;
+  --accent-soft: #dcefe4;
+  --mark: #e8a62a;
+  --mark-soft: #fbedd0;
+  --r-paper: #fbfbf7;
+  --r-ink: #1b1d1a;
+  --r-faint: #8b8f86;
+  --shadow: 0 1px 2px rgba(21, 32, 27, 0.06), 0 18px 40px -24px rgba(21, 32, 27, 0.35);
+  --display: "Familjen Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --maxw: 1120px;
+  --r: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1412; --surface: #151d1a; --sunk: #111816; --ink: #e4ebe6; --muted: #98a79f; --line: #26322d;
+    --accent: #4bbf88; --accent-ink: #06140d; --accent-soft: #163026; --mark: #f0b440; --mark-soft: #3a2d12;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1412; --surface: #151d1a; --sunk: #111816; --ink: #e4ebe6; --muted: #98a79f; --line: #26322d;
+  --accent: #4bbf88; --accent-ink: #06140d; --accent-soft: #163026; --mark: #f0b440; --mark-soft: #3a2d12;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { margin: 0; margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--paper); }
+h1, h2, h3, h4 { font-family: var(--display); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+p { margin: 0; }
+a { color: inherit; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.label { font: 600 12px/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font: 600 15px/1 var(--body); text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: transform .15s ease, background .15s ease, border-color .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.primary:hover { background: var(--accent); color: var(--accent-ink); }
+.btn.line { border-color: var(--line); color: var(--ink); background: var(--surface); }
+.btn.line:hover { border-color: var(--accent); }
+.btn.sm { padding: 9px 14px; font-size: 14px; }
+
+/* Nav */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 700 17px/1 var(--display); }
+/* Brand name: a green and amber shine sweeps across the name every few seconds */
+.brand-name { position: relative; background: linear-gradient(100deg, var(--ink) 0%, var(--ink) 38%, var(--accent) 46%, var(--mark) 52%, var(--accent) 58%, var(--ink) 66%, var(--ink) 100%); background-size: 250% 100%; background-position: 100% 0; -webkit-background-clip: text; background-clip: text; color: transparent; animation: brand-shine 4.5s ease-in-out infinite; }
+.brand-name::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; transition: transform .3s ease; }
+.brand:hover .brand-name::after { transform: scaleX(1); }
+@keyframes brand-shine { 0%, 35% { background-position: 100% 0; } 75%, 100% { background-position: 0% 0; } }
+@media (prefers-reduced-motion: reduce) { .brand-name { animation: none; background: none; color: var(--ink); } }
+/* The flex box centres the dot on the name's line box, which sits above the letters; this moves it to the middle of the letters */
+.brand .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); transform: translateY(1.5px); }
+.links { display: flex; gap: 22px; font-size: 14px; }
+.links a { text-decoration: none; color: var(--muted); }
+.links a:hover { color: var(--ink); }
+.nav-cta { display: flex; gap: 8px; }
+.progress { position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); }
+@media (max-width: 920px) { .links { display: none; } }
+@media (max-width: 480px) { .nav-cta .btn.line { display: none; } }
+
+/* Hero */
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 48px; align-items: center; padding-block: 64px 56px; }
+@media (max-width: 900px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-block: 40px; } }
+.id { display: flex; align-items: center; gap: 16px; }
+.id { gap: 20px; }
+@media (max-width: 600px) { .id img { width: 88px !important; height: 88px !important; } }
+.id img { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 3px solid var(--surface); box-shadow: 0 0 0 2px var(--accent); }
+.id b { display: block; font: 700 1.35rem/1.2 var(--display); }
+.id small { color: var(--muted); font-size: 0.95rem; }
+.chips { display: flex; flex-wrap: nowrap; gap: 6px; margin-top: 22px; }
+/* The four tags need about 650px; on screens where the column is narrower, they wrap instead of overflowing */
+@media (min-width: 901px) and (max-width: 1150px), (max-width: 700px) { .chips { flex-wrap: wrap; } }
+.chip { white-space: nowrap; font: 500 11.5px/1 var(--mono); padding: 7px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); }
+.chip.ok { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+.hero h1 { font-size: clamp(2.5rem, 5.6vw, 4.3rem); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; margin-top: 22px; }
+.hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, var(--mark-soft) 62%); }
+.intro { margin-top: 20px; font-size: 1.12rem; color: var(--muted); max-width: 58ch; }
+.intro strong { color: var(--ink); font-weight: 600; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 26px; font-size: 14px; color: var(--muted); }
+
+/* Receipt */
+.receipt { justify-self: center; width: min(100%, 380px); background: var(--r-paper); color: var(--r-ink); font: 400 13px/1.55 var(--mono); padding: 26px 24px 18px; box-shadow: var(--shadow); position: relative; transform: rotate(1.2deg); }
+.receipt::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: radial-gradient(circle at 6px 0, transparent 6px, var(--r-paper) 6.5px) 0 0 / 12px 10px repeat-x; }
+.receipt .scan { position: absolute; left: 0; right: 0; height: 36px; top: 0; background: linear-gradient(transparent, rgba(29, 122, 82, 0.10), transparent); animation: scan 5s ease-in-out infinite; pointer-events: none; }
+@keyframes scan { 0%, 100% { top: 4%; } 50% { top: 86%; } }
+.receipt .rhead { text-align: center; }
+.receipt .rhead b { display: block; font-size: 15px; letter-spacing: 0.04em; }
+.receipt hr { border: 0; border-top: 1.5px dashed var(--r-faint); margin: 12px 0; }
+.receipt dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 3px 12px; }
+.receipt dt { color: var(--r-ink); }
+.receipt dd { margin: 0; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.receipt .status { display: flex; justify-content: space-between; font-weight: 600; font-size: 15px; }
+.receipt .status span:last-child { color: #1d7a52; }
+.receipt .bars { height: 46px; margin: 14px 8px 6px; background: repeating-linear-gradient(90deg, var(--r-ink) 0 2px, transparent 2px 4px, var(--r-ink) 4px 5px, transparent 5px 8px, var(--r-ink) 8px 11px, transparent 11px 13px); }
+.receipt .foot { text-align: center; color: var(--r-faint); font-size: 12px; }
+
+/* Summary band */
+.summary { border-block: 1px solid var(--line); background: var(--surface); }
+.summary .wrap { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.sum { padding: 24px 18px; border-left: 1px solid var(--line); }
+.sum:first-child { border-left: 0; padding-left: 0; }
+.sum b { display: block; font: 700 clamp(1.7rem, 3vw, 2.3rem)/1 var(--display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.sum span { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sum span::before { content: "✓"; color: var(--accent); font-weight: 700; flex: none; }
+@media (max-width: 800px) { .summary .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sum { padding: 18px 12px; border-top: 1px solid var(--line); } .sum:nth-child(odd) { border-left: 0; padding-left: 0; } .sum:nth-child(-n+2) { border-top: 0; } .sum:last-child { grid-column: 1 / -1; } }
+
+/* Sections */
+section { padding-block: 84px; }
+section.alt { background: var(--sunk); }
+@media (max-width: 700px) { section { padding-block: 56px; } }
+.head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 48px; align-items: end; margin-bottom: 36px; }
+.head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); line-height: 1.08; margin-top: 12px; font-weight: 700; letter-spacing: -0.02em; }
+.head p { color: var(--muted); max-width: 56ch; }
+@media (max-width: 800px) { .head { grid-template-columns: minmax(0, 1fr); } }
+
+/* About */
+.about { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; }
+@media (max-width: 860px) { .about { grid-template-columns: minmax(0, 1fr); } }
+.about .text { display: grid; gap: 16px; font-size: 1.05rem; color: var(--muted); max-width: 62ch; }
+.about .text strong { color: var(--ink); font-weight: 600; }
+.pillars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-content: start; }
+@media (max-width: 480px) { .pillars { grid-template-columns: minmax(0, 1fr); } }
+.pillar { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; display: grid; gap: 6px; }
+.pillar h3 { font-size: 1.02rem; font-weight: 600; }
+.pillar p { font-size: 0.92rem; color: var(--muted); }
+.pillar i { font-style: normal; font: 600 11px/1 var(--mono); color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* Tabs (shared) */
+.tabs { display: inline-flex; flex-wrap: wrap; gap: 6px; padding: 5px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; }
+.tabs button { font: 600 14px/1 var(--body); padding: 10px 16px; border-radius: 999px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+
+/* Case studies */
+.case { margin-top: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; }
+.case-top { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 32px; padding: 32px; border-bottom: 1px solid var(--line); }
+@media (max-width: 860px) { .case-top { grid-template-columns: minmax(0, 1fr); padding: 22px; } }
+.case-top h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.15; margin-top: 10px; }
+.case-top p.lede { margin-top: 12px; color: var(--muted); }
+.case-top ul { margin: 14px 0 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.metrics { display: grid; gap: 12px; align-content: start; }
+.metric { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; border-radius: 12px; background: var(--accent-soft); }
+.metric b { font: 700 1.6rem/1 var(--display); color: var(--accent); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.metric span { font-size: 0.92rem; color: var(--ink); }
+.case-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr); gap: 28px; padding: 28px 32px 32px; }
+@media (max-width: 960px) { .case-body { grid-template-columns: minmax(0, 1fr); padding: 22px; } }
+.case-body h4 { font: 600 12px/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.case-body p, .case-body li { font-size: 0.95rem; color: var(--muted); }
+.case-body ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.case-body li b { color: var(--ink); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font: 500 11.5px/1 var(--mono); padding: 5px 9px; border-radius: 6px; background: var(--sunk); color: var(--muted); white-space: nowrap; }
+.case .tags { padding: 0 32px 28px; }
+@media (max-width: 860px) { .case .tags { padding: 0 22px 22px; } }
+.case-more[hidden] { display: none; }
+.case-toggle { display: flex; justify-content: center; padding: 16px 32px 20px; }
+.case-more:not([hidden]) + .case-toggle { border-top: 1px solid var(--line); }
+.case-toggle button { display: inline-flex; align-items: center; gap: 10px; font: 600 13px/1 var(--mono); letter-spacing: 0.04em; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 11px 18px; cursor: pointer; transition: border-color .2s, background .2s; }
+.case-toggle button:hover { border-color: var(--accent); }
+.case-toggle button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.case-toggle .chev { width: 14px; height: 14px; transition: transform .25s; }
+.case-toggle button[aria-expanded="true"] .chev { transform: rotate(180deg); }
+
+/* Pipeline */
+.pipe { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; counter-reset: step; }
+@media (max-width: 980px) { .pipe { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .pipe { grid-template-columns: minmax(0, 1fr); } }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 6px; align-content: start; position: relative; }
+.step .n { font: 600 12px/1 var(--mono); color: var(--accent); }
+.step h3 { font-size: 1rem; font-weight: 600; }
+.step code { font: 500 12px/1.3 var(--mono); color: var(--muted); }
+.step p { font-size: 0.88rem; color: var(--muted); }
+.step.human { border-style: dashed; border-color: var(--accent); }
+.arch { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; margin-top: 18px; }
+@media (max-width: 900px) { .arch { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; min-width: 0; }
+.panel-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.panel h3 { font-size: 1.08rem; font-weight: 600; }
+.arch > .panel:first-child { display: flex; flex-direction: column; }
+.diagram { flex: 1; display: flex; align-items: center; overflow-x: auto; }
+.diagram svg { width: 100%; min-width: 520px; height: auto; display: block; }
+.diagram .bx { fill: var(--sunk); stroke: var(--line); }
+.diagram .bx-a { fill: var(--accent-soft); stroke: var(--accent); }
+.diagram .t { fill: var(--ink); font: 600 13px var(--body); }
+.diagram .s { fill: var(--muted); font: 400 10.5px var(--mono); }
+.diagram .ln { stroke: var(--accent); stroke-width: 1.6; fill: none; }
+.diagram .ln.d { stroke-dasharray: 4 4; }
+.diagram .ar { fill: var(--accent); }
+.caps { display: grid; gap: 12px; align-content: start; }
+.cap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; align-items: baseline; }
+.cap .badge { font: 600 10.5px/1 var(--mono); padding: 4px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.cap b { font-weight: 600; font-size: 0.97rem; }
+.cap span:last-child { grid-column: 2; font-size: 0.9rem; color: var(--muted); }
+.guards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+@media (max-width: 900px) { .guards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .guards { grid-template-columns: minmax(0, 1fr); } }
+.guard { padding: 16px; border-radius: var(--r); border: 1px solid var(--line); background: var(--surface); }
+.guard b { display: block; font-weight: 600; }
+.guard p { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+
+/* Projects */
+.pbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+.pcount { font: 500 13px/1 var(--mono); color: var(--muted); }
+.pgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 960px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .pgrid { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; transition: border-color .15s ease, transform .15s ease; }
+.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.card.star { border-color: var(--accent); }
+.cmeta { display: flex; gap: 8px; align-items: center; min-width: 0; font: 500 12px/1 var(--mono); color: var(--muted); }
+.cmeta .k { flex: none; padding: 4px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.card.star .cmeta .k { background: var(--mark-soft); color: var(--ink); }
+.cmeta span:last-child { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card h3 { font-size: 1.12rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pts { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 0.9rem; color: var(--muted); }
+.pts li { position: relative; padding-left: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pts li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 6px; height: 6px; border-radius: 2px; background: var(--accent); }
+.impact { margin-top: auto; display: flex; align-items: baseline; gap: 10px; padding: 11px 13px; border-radius: 10px; background: var(--sunk); min-width: 0; }
+.impact b { font: 700 1.15rem/1 var(--display); color: var(--accent); white-space: nowrap; }
+.impact span { font-size: 0.88rem; color: var(--muted); min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .tags { flex-wrap: nowrap; overflow: hidden; }
+.card .jump { font: 600 13px/1 var(--body); color: var(--accent); text-decoration: none; }
+.card .jump:hover { text-decoration: underline; }
+.more { display: flex; justify-content: center; margin-top: 22px; }
+
+/* Experience */
+.tl { display: grid; gap: 18px; }
+.job { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 26px; }
+@media (max-width: 760px) { .job { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 20px; } }
+.job aside b { display: block; font: 700 1.15rem/1.25 var(--display); }
+.job aside span { display: block; font: 500 12.5px/1.5 var(--mono); color: var(--muted); margin-top: 6px; }
+.job aside em { display: inline-block; margin-top: 10px; font: 600 11px/1 var(--mono); font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.role + .role { margin-top: 20px; padding-top: 20px; border-top: 1px dashed var(--line); }
+.role-h { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.role-h h3 { font-size: 1.08rem; font-weight: 600; }
+.role-h span { font: 500 12.5px/1 var(--mono); color: var(--muted); }
+.role ul, .job ul { margin: 10px 0 0; padding-left: 1.1em; display: grid; gap: 6px; color: var(--muted); font-size: 0.95rem; }
+.promo { display: inline-flex; margin-top: 16px; font: 600 12px/1 var(--mono); color: var(--accent); background: var(--accent-soft); padding: 7px 12px; border-radius: 999px; }
+details.more-pts summary { margin-top: 10px; cursor: pointer; font: 600 13px/1 var(--body); color: var(--accent); list-style: none; }
+details.more-pts summary::-webkit-details-marker { display: none; }
+details.more-pts[open] summary .closed, details.more-pts:not([open]) summary .open { display: none; }
+.job .tags { margin-top: 14px; }
+
+/* Stacked sticky cards: each card pins under the nav and the next one slides over it.
+   JS sets each card's top, so a card taller than the screen pins only once its bottom is in view. */
+.stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.stack > * { position: sticky; top: 84px; box-shadow: 0 -14px 32px -22px rgba(21, 32, 27, 0.45), var(--shadow); }
+.stack > *:hover { transform: none; }
+/* Each card is nearly a screen tall, so one card shows at a time with the top of the next one below it */
+.stack > * { min-height: clamp(340px, calc(100vh - 170px), 600px); }
+.stack > .card { min-height: clamp(320px, calc(100vh - 230px), 470px); }
+.stack > .job { min-height: clamp(320px, calc(100vh - 230px), 440px); align-content: start; }
+.stack .job aside b { font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+@media (min-width: 761px) {
+  .stack > .job { grid-template-rows: minmax(0, 1fr); align-content: stretch; padding: 32px; }
+  .stack .job > div { display: flex; flex-direction: column; }
+  .stack .job > div > .tags:last-child { margin-top: auto !important; padding-top: 18px; }
+}
+.stack .card { padding: 30px 32px; gap: 16px; }
+.stack .card h3 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.15; white-space: normal; }
+.stack .card .pts { font-size: 1.02rem; gap: 10px; }
+.stack .card .pts li { white-space: normal; }
+.stack .card .impact { flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 20px; border-radius: 14px; background: var(--accent-soft); }
+.stack .card .impact b { font-size: 2rem; }
+.stack .card .impact span { white-space: normal; color: var(--ink); font-size: 0.95rem; }
+.stack .card .tags { flex-wrap: wrap; }
+@media (max-width: 760px) {
+  .stack .card { padding: 22px; }
+}
+@media (min-width: 761px) {
+  .stack .card { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; gap: 14px 40px; }
+  .stack .card .cmeta { grid-column: 1; grid-row: 1; }
+  .stack .card h3 { grid-column: 1; grid-row: 2; margin-top: 6px; }
+  .stack .card .pts { grid-column: 1; grid-row: 3; align-self: start; margin-top: 10px; font-size: 1.08rem; gap: 12px; }
+  .stack .card .tags { grid-column: 1; grid-row: 4; }
+  .stack .card .impact { grid-column: 2; grid-row: 1 / 5; margin: 0; justify-content: center; padding: 32px; }
+  .stack .card:has(.jump) .impact { grid-row: 1 / 4; }
+  .stack .card .impact b { font-size: clamp(2.4rem, 4.4vw, 3.6rem); }
+  .stack .card .impact span { font-size: 1.05rem; }
+  .stack .card .jump { grid-column: 2; grid-row: 4; align-self: end; justify-self: start; font-size: 15px; }
+}
+.js-stack .stack > * .pts, .js-stack .stack > * .impact, .js-stack .stack > * .tags, .js-stack .stack > .job > div { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
+.js-stack .stack > .in .pts, .js-stack .stack > .in .impact, .js-stack .stack > .in .tags, .js-stack .stack > .job.in > div { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js-stack .stack > * .pts, .js-stack .stack > * .impact, .js-stack .stack > * .tags, .js-stack .stack > .job > div { opacity: 1; transform: none; transition: none; }
+}
+
+/* Writing */
+.posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 960px) { .posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .posts { grid-template-columns: minmax(0, 1fr); } }
+.post { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px; text-decoration: none; transition: border-color .15s ease; }
+.post:hover { border-color: var(--accent); }
+.post.lead { grid-column: span 2; background: var(--surface); color: var(--ink); border-color: var(--accent); }
+@media (max-width: 600px) { .post.lead { grid-column: auto; } }
+.post .pm { font: 500 12px/1 var(--mono); color: var(--muted); }
+.post.lead .pm, .post.lead p { color: var(--muted); }
+.post h3 { font-size: 1.15rem; line-height: 1.25; }
+.post.lead h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+.post p { font-size: 0.92rem; color: var(--muted); }
+.post .stat { margin-top: auto; font: 600 12.5px/1 var(--mono); color: var(--accent); }
+.post.lead .stat { color: var(--accent); }
+
+/* Skills and credentials */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 900px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .skills { grid-template-columns: minmax(0, 1fr); } }
+.sk { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px; }
+.sk h3 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; }
+.sk.lead { border-color: var(--accent); }
+.sk .tag { font-size: 12.5px; padding: 6px 10px; background: var(--sunk); color: var(--ink); }
+.creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; }
+@media (max-width: 700px) { .creds { grid-template-columns: minmax(0, 1fr); } }
+.cred { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.cred b { font-weight: 500; }
+.cred span { font: 500 12.5px/1.6 var(--mono); color: var(--muted); white-space: nowrap; }
+.edu { margin-top: 26px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; padding: 20px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
+.edu b { font: 700 1.05rem/1.3 var(--display); }
+.edu p { color: var(--muted); font-size: 0.92rem; margin-top: 4px; max-width: 70ch; }
+.edu span { font: 500 12.5px/1.6 var(--mono); color: var(--muted); }
+
+/* Contact */
+.contact { background: var(--paper); color: var(--ink); }
+.contact .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+@media (max-width: 860px) { .contact .wrap { grid-template-columns: minmax(0, 1fr); } }
+.contact .label { color: var(--accent); }
+.contact h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; margin-top: 12px; }
+.contact p.lead { margin-top: 16px; color: var(--muted); max-width: 46ch; }
+.contact .cta-row .btn.primary { background: var(--ink); color: var(--paper); }
+.contact .cta-row .btn.primary:hover { background: var(--accent); color: var(--accent-ink); }
+.contact .cta-row .btn.line { background: var(--surface); color: var(--ink); border-color: var(--line); }
+/* Phones: keep the two contact buttons side by side, each taking half the row */
+@media (max-width: 600px) {
+  .contact .cta-row { flex-wrap: nowrap; gap: 8px; }
+  .contact .cta-row .btn { flex: 1 1 0; min-width: 0; justify-content: center; padding: 11px 10px; font-size: 14px; white-space: nowrap; }
+  .contact .cta-row .btn svg { width: 16px; height: 16px; }
+}
+@media (max-width: 360px) {
+  .contact .cta-row .btn { font-size: 12.5px; padding: 10px 6px; gap: 5px; }
+  .contact .cta-row .btn svg { width: 14px; height: 14px; }
+  .citem a, .citem span.v { font-size: 0.9rem; }
+}
+.clist { display: grid; gap: 10px; }
+.citem { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.citem small { display: block; font: 500 11.5px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.citem a, .citem span.v { font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+.citem a:hover { text-decoration: underline; }
+.copy { font: 600 12.5px/1 var(--body); padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; }
+.copy:hover { border-color: var(--accent); }
+footer { background: var(--sunk); color: var(--muted); border-top: 1px solid var(--line); font-size: 13px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-block: 22px; }
+
+/* Floating CV pill on phones */
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+img{max-width:100%} [hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="brand-name">Ariful Islam</span><span class="dot" aria-hidden="true"></span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#agents">Agentic QA</a><a href="#experience">Experience</a><a href="#cases">Case studies</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn line sm" href="https://www.linkedin.com/in/connectjaahid/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn primary sm" href="Resume_Ariful_Islam.pdf" download="Resume_Ariful_Islam.pdf">Download CV</a>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <div class="id">
+          <img src="ariful-avatar.jpg" alt="Ariful Islam" width="480" height="480">
+          <div><b>Ariful Islam</b><small>Senior SQA Engineer · Fiftytwo Digital</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip ok">6+ years in testing &amp; QA</span>
+          <span class="chip">Agentic QA</span>
+          <span class="chip">Manual &amp; Automation Testing</span>
+          <span class="chip">Team Leadership</span>
+        </div>
+        <h1>I build <em>AI agents that test</em> enterprise software.</h1>
+        <p class="intro">I lead quality for the customer solutions of an <strong>enterprise retail POS platform</strong> used by large retail chains in the Nordics, Greenland, Germany and Poland. I designed the test automation behind it: a team of AI agents that write, run, review and report Playwright tests, with a person approving every change.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="Resume_Ariful_Islam.pdf" download="Resume_Ariful_Islam.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download CV</a>
+          <a class="btn line" href="https://www.linkedin.com/in/connectjaahid/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>View LinkedIn</a>
+          <a class="btn line" href="#cases">See case studies</a>
+        </div>
+        <div class="meta-row"><span>Dhaka, Bangladesh</span><span>Fiftytwo Digital Ltd.</span><span>Playwright · Docker · Jenkins · MCP</span></div>
+      </div>
+
+      <div class="receipt" aria-label="Career summary printed as a POS receipt">
+        <div class="scan" aria-hidden="true"></div>
+        <div class="rhead"><b>Career Run Receipt</b></div>
+        <hr>
+        <p>Ariful Islam<br>Senior SQA Engineer</p>
+        <hr>
+        <dl>
+          <dt>Years in testing &amp; QA</dt><dd>6+</dd>
+          <dt>Projects worked on</dt><dd>21</dd>
+          <dt>AI agents built</dt><dd>13</dd>
+          <dt>Manual cases designed</dt><dd>3,000+</dd>
+          <dt>Critical prod defects</dt><dd>−28%</dd>
+          <dt>Europris release cycle</dt><dd>2 wk → 4 d</dd>
+          <dt>Stores reached</dt><dd>1,100+</dd>
+        </dl>
+        <hr>
+        <div class="status"><span>STATUS</span><span>PASSED</span></div>
+        <dl style="margin-top:4px"><dt>Human gate</dt><dd>✓ reviewed</dd></dl>
+        <div class="bars" aria-hidden="true"></div>
+        <p class="foot">Thank you for visiting</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div class="wrap">
+      <div class="sum"><b>6+</b><span>years in testing &amp; QA</span></div>
+      <div class="sum"><b>21</b><span>projects worked on</span></div>
+      <div class="sum"><b>13</b><span>AI agents built</span></div>
+      <div class="sum"><b>30–50h</b><span>regression, shrinking</span></div>
+      <div class="sum"><b>−28%</b><span>critical prod defects</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <span class="label">About</span>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.08;margin:12px 0 22px">Quality strategy first, then the automation to carry it.</h2>
+        <div class="text">
+          <p>I own quality end to end for the Scrum team that ships customer solutions on a retail POS (point of sale) platform every sprint. I represent QA in planning, refinement and release go or no-go decisions, and I report quality metrics to the CTO, the product lead and the QA manager.</p>
+          <p>When our POS projects had <strong>no end-to-end process and no CI for tests</strong>, I took it on. I split the test cycle into jobs, gave each job an AI agent, and connected the agents to the real system through a server I built. One customer project went from no E2E tests to full E2E in one sprint.</p>
+          <p>Before retail POS, I tested ERP, pharma, port logistics, smart-factory, learning management and e-commerce systems.</p>
+        </div>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><i>Approach</i><h3>Shift-left QA</h3><p>Find problems at the requirement and design stage, before they become bugs.</p></div>
+        <div class="pillar"><i>Automation</i><h3>Agentic automation</h3><p>AI agents with clear jobs, limited tools and checks between every step.</p></div>
+        <div class="pillar"><i>Measurement</i><h3>Data-driven quality</h3><p>Defect leakage, test effectiveness and release stability over test counts.</p></div>
+        <div class="pillar"><i>People</i><h3>Team leadership</h3><p>Mentoring QA engineers, reviewing their cases and setting the quality bar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="agents">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Agentic QA system</span><h2>Six agents, one job each, in strict order.</h2></div>
+        <p>A Testmo test case goes in. A reviewed, passing Playwright test and a Testmo report come out. Each agent checks its own work before the next one starts. Seven more agents and eight skills (workflows that run the agents in order) cover test design, PR review, failure triage and release reporting.</p>
+      </div>
+
+      <div class="pipe">
+        <div class="step"><span class="n">01</span><h3>Scout</h3><code>pom-scout</code><p>Maps each manual step to existing page objects and lists what is missing.</p></div>
+        <div class="step"><span class="n">02</span><h3>Builder</h3><code>pom-builder</code><p>Adds only the missing methods. Never edits an existing one.</p></div>
+        <div class="step"><span class="n">03</span><h3>Generator</h3><code>test-generator</code><p>Writes the spec and test data from the case and the project rules.</p></div>
+        <div class="step"><span class="n">04</span><h3>Runner</h3><code>pos-runner</code><p>Runs on a Docker POS and fixes timing until it passes in a row.</p></div>
+        <div class="step"><span class="n">05</span><h3>Reviewer</h3><code>review-runner</code><p>Every expected result needs an assertion. No fixed waits.</p></div>
+        <div class="step"><span class="n">06</span><h3>Reporter</h3><code>report-generation</code><p>Final run, Testmo upload and the HTML report.</p></div>
+      </div>
+
+      <div class="arch">
+        <div class="panel">
+          <h3>How it connects</h3>
+          <div class="diagram">
+            <svg viewBox="0 0 640 300" role="img" aria-label="I review every change. 13 AI agents and 8 skills connect to a role-based MCP server on a Linux VM, which reaches the test projects, Docker POS, Jenkins CI, Testmo, Jira and Confluence, and Bitbucket">
+              <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ar" d="M0 0L10 5L0 10z"/></marker></defs>
+              <rect class="bx" x="10" y="15" width="160" height="56" rx="12"/>
+              <text class="t" x="90" y="40" text-anchor="middle">Human gate</text>
+              <text class="s" x="90" y="57" text-anchor="middle">I review every diff</text>
+              <rect class="bx" x="10" y="110" width="160" height="80" rx="12"/>
+              <text class="t" x="90" y="145" text-anchor="middle">13 AI agents</text>
+              <text class="s" x="90" y="163" text-anchor="middle">6 in the pipeline</text>
+              <rect class="bx" x="10" y="229" width="160" height="56" rx="12"/>
+              <text class="t" x="90" y="254" text-anchor="middle">8 skills</text>
+              <text class="s" x="90" y="271" text-anchor="middle">workflows in order</text>
+              <path class="ln d" d="M90 71 V106" marker-end="url(#arr)"/>
+              <path class="ln" d="M90 229 V194" marker-end="url(#arr)"/>
+              <path class="ln" d="M170 150 H236" marker-end="url(#arr)"/>
+              <rect class="bx-a" x="240" y="95" width="170" height="110" rx="12"/>
+              <text class="t" x="325" y="128" text-anchor="middle">MCP server</text>
+              <text class="s" x="325" y="147" text-anchor="middle">9 roles · 1 token each</text>
+              <text class="s" x="325" y="163" text-anchor="middle">secrets redacted</text>
+              <text class="s" x="325" y="179" text-anchor="middle">on a Linux VM</text>
+              <rect class="bx" x="470" y="10" width="160" height="40" rx="10"/><text class="t" x="550" y="28" text-anchor="middle">Test projects</text><text class="s" x="550" y="42" text-anchor="middle">Playwright · TypeScript</text>
+              <rect class="bx" x="470" y="58" width="160" height="40" rx="10"/><text class="t" x="550" y="76" text-anchor="middle">Docker POS</text><text class="s" x="550" y="90" text-anchor="middle">VNC live view</text>
+              <rect class="bx" x="470" y="106" width="160" height="40" rx="10"/><text class="t" x="550" y="124" text-anchor="middle">Jenkins CI</text><text class="s" x="550" y="138" text-anchor="middle">PR builds · nightly</text>
+              <rect class="bx" x="470" y="154" width="160" height="40" rx="10"/><text class="t" x="550" y="172" text-anchor="middle">Testmo</text><text class="s" x="550" y="186" text-anchor="middle">cases · runs · reports</text>
+              <rect class="bx" x="470" y="202" width="160" height="40" rx="10"/><text class="t" x="550" y="220" text-anchor="middle">Jira · Confluence</text><text class="s" x="550" y="234" text-anchor="middle">stories · docs</text>
+              <rect class="bx" x="470" y="250" width="160" height="40" rx="10"/><text class="t" x="550" y="268" text-anchor="middle">Bitbucket</text><text class="s" x="550" y="282" text-anchor="middle">PR review</text>
+              <path class="ln" d="M410 112 C440 112 438 30 466 30" marker-end="url(#arr)"/>
+              <path class="ln" d="M410 124 C440 124 438 78 466 78" marker-end="url(#arr)"/>
+              <path class="ln" d="M410 140 C440 140 438 126 466 126" marker-end="url(#arr)"/>
+              <path class="ln" d="M410 160 C440 160 438 174 466 174" marker-end="url(#arr)"/>
+              <path class="ln" d="M410 176 C440 176 438 222 466 222" marker-end="url(#arr)"/>
+              <path class="ln" d="M410 188 C440 188 438 270 466 270" marker-end="url(#arr)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-top">
+            <h3>Beyond the pipeline</h3>
+            <div class="tabs" role="tablist" aria-label="Capabilities" id="capf">
+              <button type="button" role="tab" data-s="build" aria-selected="true">Build and ship · 6</button>
+              <button type="button" role="tab" data-s="analysis" aria-selected="false">Analysis · 5</button>
+            </div>
+          </div>
+          <div class="caps" id="caps">
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>Manual Case Generator</b><span>Jira story or spec → reviewed manual cases in Testmo.</span></div>
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>PR Review</b><span>Checks a Bitbucket PR and its build, drafts comments.</span></div>
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>PR Readiness</b><span>Reviews local work and drafts the PR description.</span></div>
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>Live Exploration</b><span>Agents explore the real POS before they write a test.</span></div>
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>Jenkins CI</b><span>Changed tests per PR, full suite every night.</span></div>
+            <div class="cap" data-s="build"><span class="badge">LIVE</span><b>Standard Template</b><span>A scaffolder so new projects start with the same setup.</span></div>
+            <div class="cap" data-s="analysis" hidden><span class="badge">LIVE</span><b>Requirement Review</b><span>Finds gaps in a story or case before tests are written.</span></div>
+            <div class="cap" data-s="analysis" hidden><span class="badge">LIVE</span><b>Failure Triage</b><span>Sorts failures, spots flaky tests, drafts bug reports.</span></div>
+            <div class="cap" data-s="analysis" hidden><span class="badge">LIVE</span><b>Golden Master Review</b><span>Real defect, dynamic value or outdated baseline?</span></div>
+            <div class="cap" data-s="analysis" hidden><span class="badge">LIVE</span><b>Release Quality</b><span>Release-readiness facts from runs and open bugs.</span></div>
+            <div class="cap" data-s="analysis" hidden><span class="badge">LIVE</span><b>Docs Sync</b><span>Checks that docs still match the code.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guards">
+        <div class="guard"><b>Least privilege</b><p>Each agent has its own role and can call only that role's tools.</p></div>
+        <div class="guard"><b>No secrets on agents</b><p>The agent machine holds no code, passwords or keys.</p></div>
+        <div class="guard"><b>Human gate</b><p>Agents cannot commit, push, merge or approve. I read every diff.</p></div>
+        <div class="guard"><b>Expectations are fixed</b><p>An agent can fix how a test reaches the screen, never what it expects.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Experience</span><h2>From test cases to test systems.</h2></div>
+        <p>Six years across three companies, from manual testing to leading QA and building its automation, with a promotion to Senior SQA Engineer on the way.</p>
+      </div>
+      <div class="tl stack" id="jobs">
+        <div class="job">
+          <aside><b>Fiftytwo Digital Ltd.</b><span>Oct 2022 – now · 4 yrs<br>Dhaka · Full-time<br>Enterprise retail POS</span><em>Leading quality and building automation</em></aside>
+          <div>
+            <div class="role">
+              <div class="role-h"><h3>Senior SQA Engineer</h3><span>Nov 2024 – now</span></div>
+              <ul>
+                <li>Lead QA for the customer solutions Scrum team and guide the core product team's QA member.</li>
+                <li>Lead the full automation process: planning, task delegation and reviewing team members' work.</li>
+                <li>Single-handedly converted Standard, Europris and Flugger from manual regression to E2E.</li>
+                <li>Built an agentic Playwright automation system: 13 AI agents, 8 skills and a role-based MCP server.</li>
+                <li>Moved Europris to E2E and cut its release cycle from 2 weeks to 4 days; the other projects are in progress.</li>
+              </ul>
+              <details class="more-pts"><summary><span class="closed">Show 7 more</span><span class="open">Show less</span></summary>
+                <ul>
+                  <li>Led QA for the Klarna payment integration for Kicks in Norway.</li>
+                  <li>Represent QA in sprint planning, backlog refinement and release go or no-go decisions.</li>
+                  <li>Built and run the Jenkins CI pipeline: PR builds, nightly full suites, Testmo upload and reports.</li>
+                  <li>Replacing 30–50 h of manual regression per monthly Standard release and per customer project with E2E and CI.</li>
+                  <li>Review manual and automated test cases, delegate tasks and set the quality bar with the QA manager.</li>
+                  <li>Present quality metrics to the CTO, product lead and QA manager; run UAT sessions with stakeholders.</li>
+                  <li>Debug system logs to speed up root cause analysis and make defect reports more accurate.</li>
+                </ul>
+              </details>
+              <span class="promo">Promoted to Senior SQA Engineer · Nov 2024</span>
+            </div>
+            <div class="role">
+              <div class="role-h"><h3>SQA Engineer</h3><span>Oct 2022 – Oct 2024</span></div>
+              <ul>
+                <li>Sole QA for Europris and Flugger from first sketch to delivery, with the dev team and the QA manager.</li>
+                <li>Designed 3,000+ manual test cases and test scenarios for Europris and Flugger.</li>
+                <li>Cut critical production defects by 28% by bringing shift-left practices into the team.</li>
+                <li>Led QA for Verifone P630 (PSDK) certification on the core POS, then its integration for Flugger and Kicks.</li>
+              </ul>
+              <details class="more-pts"><summary><span class="closed">Show 4 more</span><span class="open">Show less</span></summary>
+                <ul>
+                  <li>Tested Standard core features and Preem, Bauhaus, Pisiffik, Kicks, Netto DE/PL (Salling Group) work.</li>
+                  <li>Introduced Testmo as the single test management platform in place of scattered files.</li>
+                  <li>Mentored QA engineers and raised the team's output quality by 20% through process changes.</li>
+                  <li>Reviewed peers' test cases and coordinated testing across the QA team.</li>
+                </ul>
+              </details>
+            </div>
+            <div class="tags" style="margin-top:16px"><span class="tag">Playwright</span><span class="tag">AI agents</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Testmo</span><span class="tag">Jira</span><span class="tag">Bitbucket</span></div>
+          </div>
+        </div>
+
+        <div class="job">
+          <aside><b>Intellier Limited</b><span>Dec 2021 – Sep 2022<br>QA Engineer</span><em>From tester to QA owner</em></aside>
+          <div>
+            <ul>
+              <li>Owned requirement analysis and test design for assigned modules, raising test coverage by 35%.</li>
+              <li>Helped restructure the release process for 20% faster sprint delivery in Agile and Kanban.</li>
+              <li>Added REST API testing with Postman, cutting integration failures by 15%.</li>
+              <li>Owned the full QA lifecycle of a port requisition system, including UAT with the client's stakeholders.</li>
+            </ul>
+            <details class="more-pts"><summary><span class="closed">Show 5 more</span><span class="open">Show less</span></summary>
+              <ul>
+                <li>Improved defect reporting standards in Redmine, so developers could act on bugs faster.</li>
+                <li>Tracked defect metrics and feature dashboards to make sprint outcomes more predictable.</li>
+                <li>Tested a pharma ERP end to end with 300+ cases: batch tracking, expiry and regulatory workflows.</li>
+                <li>Tested a smart factory solution that tracks apparel shop-floor production in real time.</li>
+                <li>Added performance testing with JMeter to the test cycle.</li>
+              </ul>
+            </details>
+            <div class="tags"><span class="tag">Postman</span><span class="tag">JMeter</span><span class="tag">Redmine</span><span class="tag">Kanban</span><span class="tag">UAT</span></div>
+          </div>
+        </div>
+
+        <div class="job">
+          <aside><b>bdtask</b><span>Jun 2020 – Nov 2021<br>Junior SQA Engineer</span><em>Where I learned the craft</em></aside>
+          <div>
+            <ul>
+              <li>Designed and ran 2,000+ structured test cases, raising module-level coverage by 30%.</li>
+              <li>Did cross-browser and cross-platform testing, cutting UI and functional issues by 22%.</li>
+              <li>Cut the defect reopen rate by 18% with stronger verification and follow-up testing.</li>
+              <li>Wrote clear, reproducible defect reports, so developers could debug faster.</li>
+            </ul>
+            <details class="more-pts"><summary><span class="closed">Show 6 more</span><span class="open">Show less</span></summary>
+              <ul>
+                <li>Worked with the UI/UX team on usability flows to make key user tasks easier to complete.</li>
+                <li>Tested my first POS: a restaurant system with table booking, kitchen display, billing and tips.</li>
+                <li>Tested a six-module manufacturing ERP: sales, production, inventory, procurement, accounting, HR.</li>
+                <li>Tested a multivendor e-commerce platform: catalog, checkout, vendor onboarding, commissions, payouts.</li>
+                <li>Tested a learning management system on web and mobile, and took part in UAT sessions with stakeholders.</li>
+                <li>Ran smoke, functional and regression tests on every release and tracked each defect to closure.</li>
+              </ul>
+            </details>
+            <div class="tags"><span class="tag">Manual</span><span class="tag">Regression</span><span class="tag">Cross-browser</span><span class="tag">API</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="cases">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Case studies</span><h2>Two sides of one POS platform.</h2></div>
+        <div>
+          <p>The same enterprise retail POS, seen from manual QA ownership and from the agentic automation I built for it.</p>
+          <div class="tabs" role="tablist" aria-label="Case studies" style="margin-top:16px">
+            <button type="button" role="tab" id="tab-manual" aria-controls="case-manual" aria-selected="true">Manual QA</button>
+            <button type="button" role="tab" id="tab-auto" aria-controls="case-auto" aria-selected="false">Agentic E2E</button>
+          </div>
+        </div>
+      </div>
+
+      <article class="case" id="case-manual" role="tabpanel" aria-labelledby="tab-manual">
+        <div class="case-top">
+          <div>
+            <span class="label">Oct 2022 – now · Fiftytwo Digital</span>
+            <h3>52ViKING Retail POS: Core Product And Customer Solutions</h3>
+            <p class="lede">Lead QA for the customer POS solutions and the solution Scrum team, on a core POS used by European retail chains. The core product team has its own QA member, whom I guide. I was the only QA on the Europris and Flugger projects, from first sketch to delivery, working with the development team and the QA manager.</p>
+            <ul>
+              <li>Europris and Flugger: sole QA owner from first sketch to delivery</li>
+              <li>Feature projects for Preem, Bauhaus, Pisiffik, Kicks, Netto DE and Netto PL (Salling Group), and the Standard core product</li>
+              <li>Payment integrations: Verifone P630 (PSDK), Swedbank PAX A35, Klarna, iGive, Retain24 and loyalty points</li>
+              <li>Fiscal printer compliance for Flugger's rollout in Poland</li>
+            </ul>
+          </div>
+          <div class="metrics">
+            <div class="metric"><b>3,000+</b><span>manual cases for Europris and Flugger</span></div>
+            <div class="metric"><b>−28%</b><span>critical production defects</span></div>
+            <div class="metric"><b>1,100+</b><span>stores across the projects I tested</span></div>
+          </div>
+        </div>
+        <div class="case-more" id="more-manual" hidden>
+        <div class="case-body">
+          <div><h4>The challenge</h4><p>Many retail chains run the same core POS, each with its own payment providers, gift card and loyalty partners, and local rules. Test knowledge lived in scattered files, and serious defects were found late, close to release.</p></div>
+          <div><h4>What I did</h4><ul>
+            <li><b>Full ownership.</b> Ran QA alone for Europris and Flugger, from the first sketch through requirements, test planning, testing and UAT to delivery, together with the development team and the QA manager.</li>
+            <li><b>Test design at scale.</b> Designed 3,000+ manual test cases and scenarios for those two projects.</li>
+            <li><b>One home for tests.</b> Introduced Testmo as the single test management platform and moved the scattered files into it.</li>
+            <li><b>Feature work across customers.</b> Tested many features on the Standard core product and for Preem, Bauhaus, Pisiffik, Kicks, Netto DE and Netto PL (Salling Group). Each project has its own card below.</li>
+            <li><b>Shift-left.</b> Joined refinement to review acceptance criteria before development, so gaps were found before code was written.</li>
+            <li><b>Integrations.</b> Led QA for the Verifone P630 (PSDK) certification on the core POS standard features, in the scope Verifone defined, and for its later integration into the Flugger and Kicks solutions with their extended features. Also led QA for Klarna at Kicks Norway. Tested Swedbank PAX A35, iGive, Retain24 and loyalty points.</li>
+            <li><b>Compliance.</b> Tested fiscal printer integration for Flugger's rollout in Poland.</li>
+            <li><b>Root cause.</b> Read POS and system logs to make defect reports exact and speed up fixes.</li>
+            <li><b>People.</b> Ran UAT sessions with stakeholders and mentored QA engineers.</li>
+          </ul></div>
+          <div><h4>The result</h4><p>Europris and Flugger were delivered with one QA owner from start to finish. Critical production defects fell by 28%, and the team's output quality rose by 20%.</p></div>
+        </div>
+        <div class="tags"><span class="tag">Manual testing</span><span class="tag">UAT</span><span class="tag">Testmo</span><span class="tag">Jira</span><span class="tag">Shift-left</span><span class="tag">Scrum</span></div>
+        </div>
+        <div class="case-toggle"><button type="button" aria-expanded="false" aria-controls="more-manual"><span>Read the full case study</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></button></div>
+      </article>
+
+      <article class="case" id="case-auto" role="tabpanel" aria-labelledby="tab-auto" hidden>
+        <div class="case-top">
+          <div>
+            <span class="label">Nov 2024 – now · Fiftytwo Digital</span>
+            <h3>52ViKING Retail POS: Agentic E2E Automation</h3>
+            <p class="lede">I designed and built the end-to-end test automation for the same POS: AI agents that write, run, review and report Playwright tests, a role-based MCP server, a POS that runs in Docker and the Jenkins CI. I lead the full automation process, with the planning and task delegation on me, and I moved Standard, Europris and Flugger from manual regression to E2E single-handedly.</p>
+            <ul>
+              <li>Moved Standard, Europris and Flugger from manual regression to E2E single-handedly</li>
+              <li>Core product suite plus customer suites for Europris and Flugger</li>
+              <li>One shared project template, so every customer gets the same structure and CI</li>
+              <li>PR builds run the changed tests, and nightly runs cover the full suite</li>
+            </ul>
+          </div>
+          <div class="metrics">
+            <div class="metric"><b>2 wk → 4 d</b><span>release cycle, Europris</span></div>
+            <div class="metric"><b>30–50 h</b><span>manual regression per release, shrinking with E2E</span></div>
+            <div class="metric"><b>4</b><span>projects in CI</span></div>
+          </div>
+        </div>
+        <div class="case-more" id="more-auto" hidden>
+        <div class="case-body">
+          <div><h4>The challenge</h4><p>The POS projects had no end-to-end test process and no CI for tests. Each monthly Standard release took 30–50 hours of manual regression, and each customer project needed its own 30–50 hour regression when required, depending on its case volume and test areas. Each customer project also had its own setup.</p></div>
+          <div><h4>How it works</h4><ul>
+            <li><b>Six pipeline agents.</b> A scout maps the manual test steps onto existing page objects, a builder adds the missing ones, a generator drafts the spec and test data, a runner runs it on the Docker POS until it passes 3 times in a row, a reviewer removes fixed waits, hard-coded data and weak assertions, and a report agent uploads the run to Testmo.</li>
+            <li><b>Role-based MCP server.</b> 9 roles, each with its own token. An agent gets only the tools its role needs, a call outside the role is refused, and secrets are removed from every output. No tool can delete a project or push code: people do every commit.</li>
+            <li><b>POS in Docker.</b> The POS and a debug browser run in containers, with a VNC view to watch a run live. Up to 3 POS instances run side by side.</li>
+            <li><b>Jenkins CI.</b> PR builds run only the tests a change touches, images are reused when nothing changed, and locks stop two builds from sharing a POS. Each customer has a nightly full-suite slot with Testmo upload, an HTML report, email and a diagnostics file on failure.</li>
+            <li><b>Golden master checks.</b> Receipts and transactions are compared with approved baselines, so a changed receipt line is caught.</li>
+          </ul></div>
+          <div><h4>The result</h4><p>Europris moved to E2E, and its release cycle went from 2 weeks to 4 days. One customer project went from no E2E tests to full E2E in one sprint. The other projects are on the way, and the manual regression hours keep going down as more cases move to E2E and CI.</p></div>
+        </div>
+        <div class="tags"><span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">MCP</span><span class="tag">AI agents</span></div>
+        </div>
+        <div class="case-toggle"><button type="button" aria-expanded="false" aria-controls="more-auto"><span>Read the full case study</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></button></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Projects</span><h2>21 projects, newest first.</h2></div>
+        <p>Retail POS customers across the Nordics, Greenland, Germany and Poland, the automation behind them, and the enterprise systems where I started.</p>
+      </div>
+      <div class="pbar">
+        <div class="tabs" role="group" aria-label="Filter projects" id="pf">
+          <button type="button" data-f="all" aria-selected="true">All</button>
+          <button type="button" data-f="retail" aria-selected="false">Retail and POS</button>
+          <button type="button" data-f="auto" aria-selected="false">Automation</button>
+          <button type="button" data-f="ent" aria-selected="false">Enterprise</button>
+        </div>
+        <span class="pcount tnum" id="pcount" aria-live="polite"></span>
+      </div>
+
+      <div class="pgrid stack" id="pgrid">
+        <article class="card star" data-c="retail"><div class="cmeta"><span class="k">★ Manual QA</span><span>Oct 2022 – now · Fiftytwo</span></div><h3>52ViKING POS: Manual QA</h3><ul class="pts"><li>Lead QA, customer solutions Scrum team</li><li>Sole QA on Europris and Flugger</li><li>Guide the core product QA member</li><li>Introduced Testmo as the one test platform</li><li>Shift-left cut critical prod defects by 28%</li></ul><div class="impact"><b>3,000+</b><span>cases for Europris, Flugger</span></div><a class="jump" href="#cases" data-case="manual">Read the case study ↑</a><div class="tags"><span class="tag">Manual testing</span><span class="tag">UAT</span><span class="tag">Testmo</span></div></article>
+        <article class="card star" data-c="auto retail"><div class="cmeta"><span class="k">★ Automation</span><span>Nov 2024 – now · Fiftytwo</span></div><h3>52ViKING POS: Agentic E2E</h3><ul class="pts"><li>Lead the full automation process</li><li>Built 13 AI agents and an MCP server</li><li>Solo: Standard, Europris, Flugger to E2E</li><li>POS in Docker, up to 3 side by side</li><li>PR builds and nightly suites in Jenkins</li></ul><div class="impact"><b>2 wk → 4 d</b><span>Europris release cycle</span></div><a class="jump" href="#cases" data-case="auto">Read the case study ↑</a><div class="tags"><span class="tag">Playwright</span><span class="tag">MCP</span><span class="tag">Jenkins</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Gift cards</span><span>2026 · Preem, Sweden</span></div><h3>Preem Retain24 Gift Cards</h3><ul class="pts"><li>Tested physical and QR gift cards</li><li>Card activation and reloads</li><li>Balance checks at the POS</li><li>Split payments with a gift card</li><li>Refunds back to the gift card</li></ul><div class="impact"><b>500+</b><span>stores in Sweden</span></div><div class="tags"><span class="tag">Retain24</span><span class="tag">Gift cards</span><span class="tag">Split payment</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Payment terminal</span><span>2026 · Preem, Sweden</span></div><h3>Swedbank Pay PAX A35</h3><ul class="pts"><li>Tested a new Nexo Retailer driver</li><li>Card sale and refund on the terminal</li><li>PIN pad log-in and log-off</li><li>Receipt content checked</li><li>Bookkeeping data checked</li></ul><div class="impact"><b>Nexo</b><span>Retailer, sale to bookkeeping</span></div><div class="tags"><span class="tag">Swedbank Pay</span><span class="tag">EFT</span><span class="tag">Receipts</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Hardware</span><span>2026 · Netto, Germany</span></div><h3>Netto DE Weight Scale</h3><ul class="pts"><li>Sale of weighed items from the scale</li><li>Returns of weighed items</li><li>Dynamic pricing on weighed returns</li><li>Receipts and logs checked</li><li>Store service system changes verified</li></ul><div class="impact"><b>Scale</b><span>to POS integration</span></div><div class="tags"><span class="tag">Hardware</span><span class="tag">Integration</span></div></article>
+        <article class="card" data-c="auto"><div class="cmeta"><span class="k">CI/CD</span><span>2026</span></div><h3>E2E Pipeline In Jenkins</h3><ul class="pts"><li>Built and run the full CI pipeline</li><li>PR builds run only the changed tests</li><li>Nightly suite, Testmo upload, reports</li><li>Images reused when nothing changed</li><li>Locks stop two builds sharing a POS</li></ul><div class="impact"><b>30–50 h</b><span>per release, shrinking</span></div><div class="tags"><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Bitbucket</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Full POS</span><span>2025 · Netto, Poland</span></div><h3>Netto PL Merge To Standard</h3><ul class="pts"><li>Fiscal: POSNet and Innova printers</li><li>EFT: Polcard and LAN300 terminals</li><li>Service charge, employee and gift card discounts</li><li>Comeback and bottle vouchers, NIP tax ID</li><li>Rebuilt the manual test suite from scratch</li></ul><div class="impact"><b>Full</b><span>solution tested, suite rebuilt</span></div><div class="tags"><span class="tag">Fiscal printer</span><span class="tag">EFT</span><span class="tag">Discounts</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Loyalty</span><span>2025 · Bauhaus, 7 countries</span></div><h3>Bauhaus Loyalty Feature</h3><ul class="pts"><li>New loyalty feature in the core POS</li><li>Built into the Standard core product</li><li>Loyalty flows tested end to end</li><li>Ran the core product regression</li><li>One POS for stores in 7 countries</li></ul><div class="impact"><b>7</b><span>countries on the same POS</span></div><div class="tags"><span class="tag">Loyalty</span><span class="tag">New feature</span><span class="tag">Core POS</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Loyalty</span><span>2025 · Pisiffik, Greenland</span></div><h3>Pisiffik Loyalty Points</h3><ul class="pts"><li>Points turned into a discount at the POS</li><li>Customer picks the discount tier</li><li>Point redemption during a sale</li><li>Balance updates during the sale</li><li>For Pisiffik stores in Greenland</li></ul><div class="impact"><b>Tiers</b><span>chosen by customer at the POS</span></div><div class="tags"><span class="tag">Loyalty API</span><span class="tag">Discounts</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Gift cards</span><span>2025 · Europris, Norway</span></div><h3>Europris iGive Gift Cards</h3><ul class="pts"><li>Norway's leading gift card solution</li><li>Full and partial payment with a gift card</li><li>Balance checks at the POS</li><li>Scanned or typed card numbers</li><li>Gift card bookkeeping checked</li></ul><div class="impact"><b>iGive</b><span>gift cards end to end</span></div><div class="tags"><span class="tag">iGive</span><span class="tag">Gift cards</span><span class="tag">Payments</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Payments</span><span>2025 · Kicks, Norway</span></div><h3>Klarna Payments For Kicks</h3><ul class="pts"><li>Led QA for Klarna payment integration</li><li>For Kicks stores in Norway</li><li>Tested Klarna payment flows at the POS</li><li>Planned the test scope as lead QA</li><li>Worked with the Kicks solution team</li></ul><div class="impact"><b>Klarna</b><span>payments at the Kicks POS</span></div><div class="tags"><span class="tag">Klarna</span><span class="tag">Payments</span><span class="tag">Lead QA</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Full POS</span><span>2024–25 · Flugger, 5 countries</span></div><h3>Flugger POS Solution</h3><ul class="pts"><li>Sole QA from first sketch to delivery</li><li>Custom POS for 300+ stores, 5 countries</li><li>Quotations, account payments, campaigns</li><li>Fiscal printers and NIP for Poland</li><li>Verifone P360 terminal, UAT</li></ul><div class="impact"><b>300+</b><span>stores in 5 countries</span></div><div class="tags"><span class="tag">Fiscal printer</span><span class="tag">Verifone</span><span class="tag">UAT</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Payment terminal</span><span>2024 · Core POS</span></div><h3>Verifone P630 PSDK</h3><ul class="pts"><li>Led QA for the Verifone certification</li><li>Core POS scope defined by Verifone</li><li>Tested the core POS standard features</li><li>Then integrated for Flugger and Kicks</li><li>Covered their extended features too</li></ul><div class="impact"><b>2</b><span>phases: certification, integration</span></div><div class="tags"><span class="tag">Verifone</span><span class="tag">PSDK</span><span class="tag">Certification</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Full POS</span><span>2023 – 2024 · Europris, Norway</span></div><h3>Europris POS Solution</h3><ul class="pts"><li>Sole QA from first sketch to delivery</li><li>Sales, returns, receipts and bookkeeping</li><li>DealEngine discounts and loyalty</li><li>Customer registration, invoice payments</li><li>Account payments, Verifone P400</li></ul><div class="impact"><b>250+</b><span>stores in Norway</span></div><div class="tags"><span class="tag">Verifone</span><span class="tag">Loyalty</span><span class="tag">UAT</span></div></article>
+        <article class="card" data-c="ent"><div class="cmeta"><span class="k">Manufacturing</span><span>2021 – 2022 · Intellier</span></div><h3>Smart Factory Solution</h3><ul class="pts"><li>Real-time apparel production tracking</li><li>Requirement analysis and test design</li><li>Release testing with Kanban and Redmine</li><li>REST API tests with Postman</li><li>Defect reports tracked in Redmine</li></ul><div class="impact"><b>Nidle</b><span>smart factory product</span></div><div class="tags"><span class="tag">Kanban</span><span class="tag">Redmine</span><span class="tag">Postman</span></div></article>
+        <article class="card" data-c="ent"><div class="cmeta"><span class="k">Pharma</span><span>2022 · Intellier</span></div><h3>Pharma ERP</h3><ul class="pts"><li>Inventory and supply chain</li><li>Production and procurement</li><li>Distribution tested end to end</li><li>Batch tracking and expiry dates</li><li>Regulatory workflows</li></ul><div class="impact"><b>300+</b><span>test cases designed</span></div><div class="tags"><span class="tag">E2E</span><span class="tag">Compliance</span></div></article>
+        <article class="card" data-c="ent"><div class="cmeta"><span class="k">Logistics</span><span>2022 · Payra Port, Intellier</span></div><h3>Port Requisition System</h3><ul class="pts"><li>Owned the full QA lifecycle</li><li>Functional and integration test plans</li><li>UAT with the client's stakeholders</li><li>Multi-level approval workflows</li><li>Role-based access and routing</li></ul><div class="impact"><b>UAT</b><span>run with client stakeholders</span></div><div class="tags"><span class="tag">RBAC</span><span class="tag">Workflows</span></div></article>
+        <article class="card" data-c="ent"><div class="cmeta"><span class="k">ERP</span><span>2020 – 2021 · bdtask</span></div><h3>Manufacturing ERP</h3><ul class="pts"><li>Sales and production</li><li>Inventory and procurement</li><li>Accounting and HR</li><li>Functional and regression testing</li><li>Six modules tested end to end</li></ul><div class="impact"><b>6</b><span>business modules tested end to end</span></div><div class="tags"><span class="tag">Manual</span><span class="tag">Regression</span><span class="tag">Bug tracking</span></div></article>
+        <article class="card" data-c="ent"><div class="cmeta"><span class="k">EdTech</span><span>2021 · Lead Academy, bdtask</span></div><h3>Learning Management System</h3><ul class="pts"><li>Enrollment and course progress</li><li>Certification</li><li>Payment flows</li><li>Tested on web and mobile</li><li>Joined UAT sessions with stakeholders</li></ul><div class="impact"><b>2</b><span>platforms: web and mobile</span></div><div class="tags"><span class="tag">Web</span><span class="tag">Mobile</span><span class="tag">API</span><span class="tag">UAT</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">E-commerce</span><span>2020 · bdtask</span></div><h3>Multivendor E-Commerce</h3><ul class="pts"><li>Catalog, cart and checkout</li><li>Orders and inventory</li><li>Payment gateway flows</li><li>Vendor onboarding and commissions</li><li>Vendor payouts, cross-browser checks</li></ul><div class="impact"><b>E2E</b><span>catalog to vendor payouts</span></div><div class="tags"><span class="tag">Payments</span><span class="tag">API</span><span class="tag">Cross-browser</span></div></article>
+        <article class="card" data-c="retail"><div class="cmeta"><span class="k">Restaurant POS</span><span>2020 · bdtask</span></div><h3>Restaurant POS System</h3><ul class="pts"><li>Table booking</li><li>Kitchen display sync</li><li>Billing and tips</li><li>Tested across browsers and platforms</li><li>First POS project of my career</li></ul><div class="impact"><b>1st</b><span>POS project of my career</span></div><div class="tags"><span class="tag">Cross-platform</span><span class="tag">Manual</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="writing">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Writing</span><h2>Notes on QA and AI.</h2></div>
+        <div><p>I write on LinkedIn about agentic QA, test design and quality leadership.</p><a class="btn line sm" style="margin-top:14px" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener">Follow on LinkedIn</a></div>
+      </div>
+      <div class="posts">
+        <a class="post lead" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener"><span class="pm">Nov 2025 · Most read</span><h3>QA engineers must think like developers, analysts and users, all at once.</h3><p>The three views that turn QA from a checkpoint into a strategic function.</p><span class="stat tnum">19,976 views · 462 reactions</span></a>
+        <a class="post" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener"><span class="pm">Oct 2026 · Carousel</span><h3>Why QA must build with AI, not just use it</h3><p>From chat and prompts to agents with tools, limits and proof.</p><span class="stat tnum">3,535 views</span></a>
+        <a class="post" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener"><span class="pm">Oct 2026 · Post</span><h3>Who tests the tests the AI writes?</h3><p>The review gates a new AI-written test passes before it lands.</p><span class="stat">Read on LinkedIn →</span></a>
+        <a class="post" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener"><span class="pm">Apr 2026 · Post</span><h3>A tricky cross-origin session bug in Playwright</h3><p>The sessionStorage blind spot in storageState(), and the fix.</p><span class="stat tnum">962 views</span></a>
+        <a class="post" href="https://www.linkedin.com/in/connectjaahid/recent-activity/all/" target="_blank" rel="noopener"><span class="pm">Mar 2026 · Post</span><h3>From test execution to KPI-driven quality</h3><p>Defect leakage, test effectiveness, automation ROI and MTTD.</p><span class="stat tnum">555 views</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Skills</span><h2>Leadership, tools and methods.</h2></div>
+        <p>What I use every week to plan, build and lead quality work.</p>
+      </div>
+      <div class="skills">
+        <div class="sk lead"><h3>Leadership</h3><div class="tags"><span class="tag">QA team lead</span><span class="tag">Test planning</span><span class="tag">Task delegation</span><span class="tag">Work review</span><span class="tag">Mentoring</span><span class="tag">Quality metrics</span><span class="tag">Stakeholder updates</span><span class="tag">Release go/no-go</span></div></div>
+        <div class="sk"><h3>Automation and API</h3><div class="tags"><span class="tag">Playwright</span><span class="tag">Cypress</span><span class="tag">Cucumber</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Postman</span><span class="tag">REST APIs</span><span class="tag">Swagger</span><span class="tag">JMeter</span></div></div>
+        <div class="sk"><h3>AI in testing</h3><div class="tags"><span class="tag">AI agents and skills</span><span class="tag">MCP servers</span><span class="tag">AI test design</span><span class="tag">Prompt design</span></div></div>
+        <div class="sk"><h3>CI and environments</h3><div class="tags"><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Bitbucket</span><span class="tag">Linux</span></div></div>
+        <div class="sk"><h3>Test management</h3><div class="tags"><span class="tag">Testmo</span><span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">Redmine</span><span class="tag">TestLink</span></div></div>
+        <div class="sk"><h3>Quality process</h3><div class="tags"><span class="tag">Shift-left QA</span><span class="tag">Risk-based testing</span><span class="tag">Process optimization</span><span class="tag">Issue management</span><span class="tag">UAT</span><span class="tag">Scrum</span><span class="tag">Kanban</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="credentials">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Credentials</span><h2>Certifications and education.</h2></div>
+        <p>Courses I finished alongside the work, newest first.</p>
+      </div>
+      <div class="creds">
+        <div class="cred"><b>Product Owner Fundamentals</b><span>Udemy · 2023</span></div>
+        <div class="cred"><b>Agile Project Management</b><span>Google · 2023</span></div>
+        <div class="cred"><b>Foundations of Project Management</b><span>Google · 2023</span></div>
+        <div class="cred"><b>Postman: API Automation Testing</b><span>Udemy · 2022</span></div>
+        <div class="cred"><b>Understanding Atlassian Confluence</b><span>Udemy · 2022</span></div>
+        <div class="cred"><b>Cucumber Automation Framework</b><span>Udemy · 2022</span></div>
+        <div class="cred"><b>JMeter: Performance Testing</b><span>Udemy · 2022</span></div>
+        <div class="cred"><b>Software Development Processes and Methodologies</b><span>Coursera · 2022</span></div>
+        <div class="cred"><b>Manual Software Testing</b><span>Udemy · 2022</span></div>
+        <div class="cred"><b>Agile with Atlassian Jira</b><span>Atlassian · 2021</span></div>
+      </div>
+      <div class="edu">
+        <div><b>B.Sc. in Computer Science and Engineering</b><p>University of Information Technology &amp; Sciences (UITS). Executive of the Computer Club, the Sports Club and the BASIS Student Forum chapter.</p></div>
+        <span>2015 – 2019</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="label">Contact</span>
+        <h2>Let us talk about quality and AI in testing.</h2>
+        <p class="lead">Questions about agentic QA, test automation or a project you have in mind? Email me, or message me on WhatsApp or LinkedIn.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="Resume_Ariful_Islam.pdf" download="Resume_Ariful_Islam.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download CV</a>
+          <a class="btn line" href="https://www.linkedin.com/in/connectjaahid/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <div class="clist">
+        <div class="citem"><div><small>Email</small><a href="mailto:jaahid.cse@gmail.com">jaahid.cse@gmail.com</a></div><button class="copy" type="button" data-copy="jaahid.cse@gmail.com">Copy</button></div>
+        <div class="citem"><div><small>WhatsApp</small><a href="https://wa.me/8801628585328" target="_blank" rel="noopener">+880-1628585328</a></div><button class="copy" type="button" data-copy="+880-1628585328">Copy</button></div>
+        <div class="citem"><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/connectjaahid/" target="_blank" rel="noopener">linkedin.com/in/connectjaahid</a></div><span></span></div>
+        <div class="citem"><div><small>Location</small><span class="v">Dhaka, Bangladesh</span></div><span></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Ariful Islam</span><span>Designed and built with an AI agent, reviewed by a human.</span></div>
+</footer>
+
+
+<script>
+(function () {
+  // Reading progress bar
+  var bar = document.getElementById('progress');
+  function onScroll() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, window.scrollY / h) : 0) + ')';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Case study tabs
+  var caseTabs = { manual: document.getElementById('tab-manual'), auto: document.getElementById('tab-auto') };
+  function showCase(key) {
+    Object.keys(caseTabs).forEach(function (k) {
+      caseTabs[k].setAttribute('aria-selected', k === key ? 'true' : 'false');
+      document.getElementById('case-' + k).hidden = k !== key;
+    });
+  }
+  caseTabs.manual.addEventListener('click', function () { showCase('manual'); });
+  caseTabs.auto.addEventListener('click', function () { showCase('auto'); });
+  // Case study details, folded until the visitor opens them
+  function setCaseOpen(btn, open) {
+    var more = document.getElementById(btn.getAttribute('aria-controls'));
+    more.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.querySelector('span').textContent = open ? 'Hide the details' : 'Read the full case study';
+  }
+  document.querySelectorAll('.case-toggle button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      setCaseOpen(btn, open);
+      if (!open) btn.closest('.case').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  document.querySelectorAll('.jump[data-case]').forEach(function (a) {
+    a.addEventListener('click', function () { showCase(a.getAttribute('data-case')); });
+  });
+
+  // Capability tabs, with the list held at the height of its longest tab
+  var capBtns = document.querySelectorAll('#capf button');
+  var caps = document.querySelectorAll('#caps .cap');
+  var capBox = document.getElementById('caps');
+  function showCaps(s) {
+    capBtns.forEach(function (b) { b.setAttribute('aria-selected', b.getAttribute('data-s') === s ? 'true' : 'false'); });
+    caps.forEach(function (c) { c.hidden = c.getAttribute('data-s') !== s; });
+  }
+  function fixCapHeight() {
+    var current = document.querySelector('#capf button[aria-selected="true"]').getAttribute('data-s');
+    capBox.style.minHeight = '';
+    var max = 0;
+    capBtns.forEach(function (b) { showCaps(b.getAttribute('data-s')); max = Math.max(max, capBox.offsetHeight); });
+    showCaps(current);
+    capBox.style.minHeight = max + 'px';
+  }
+  capBtns.forEach(function (b) { b.addEventListener('click', function () { showCaps(b.getAttribute('data-s')); }); });
+  fixCapHeight();
+  window.addEventListener('resize', fixCapHeight);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fixCapHeight);
+
+  // Stacked sticky cards in Projects and Experience
+  var stackItems = Array.prototype.slice.call(document.querySelectorAll('.stack > *'));
+  var nav = document.querySelector('.nav');
+  function layoutStacks() {
+    var base = (nav ? nav.offsetHeight : 64) + 16;
+    stackItems.forEach(function (el) {
+      if (el.hidden) return;
+      el.style.top = Math.min(base, window.innerHeight - el.offsetHeight - 16) + 'px';
+    });
+  }
+  window.layoutStacks = layoutStacks;
+  window.addEventListener('resize', layoutStacks);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutStacks);
+  document.querySelectorAll('.stack details').forEach(function (d) { d.addEventListener('toggle', layoutStacks); });
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('js-stack');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    stackItems.forEach(function (el) { io.observe(el); });
+  }
+
+  // Project filters; every matching project is in the stack
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#pgrid .card'));
+  var fBtns = document.querySelectorAll('#pf button');
+  var count = document.getElementById('pcount');
+  var filter = 'all';
+  function render() {
+    var shown = 0;
+    cards.forEach(function (c) {
+      c.hidden = !(filter === 'all' || c.getAttribute('data-c').split(' ').indexOf(filter) > -1);
+      if (!c.hidden) shown++;
+    });
+    count.textContent = shown + ' of ' + cards.length + ' projects';
+    if (window.layoutStacks) window.layoutStacks();
+  }
+  fBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      filter = b.getAttribute('data-f');
+      fBtns.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      render();
+    });
+  });
+  render();
+
+  // Copy buttons
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var text = b.getAttribute('data-copy');
+      function done() { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { b.textContent = 'Select it'; });
+      } else { b.textContent = 'Select it'; }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
