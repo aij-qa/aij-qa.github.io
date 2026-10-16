@@ -1,6 +1,6 @@
 # Ariful Islam Portfolio
 
-This repository holds my personal portfolio site. It is live at **https://aij404.github.io/**.
+This repository holds my personal portfolio site. It is live at **https://aij-qa.github.io/**.
 
 I am a Senior SQA Engineer with 6+ years in testing and QA. I lead QA for the customer solutions of an enterprise retail POS platform used by large retail chains in the Nordics, Greenland, Germany and Poland. I also built its agentic test automation: AI agents that write, run, review and report Playwright tests, with a person approving every change.
 
