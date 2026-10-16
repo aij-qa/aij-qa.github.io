@@ -19,6 +19,7 @@ I am a Senior SQA Engineer with 6+ years in testing and QA. I lead QA for the cu
 | --- | --- |
 | `index.html` | The whole site: one page with its HTML, CSS and JavaScript |
 | `ariful-avatar.jpg` | Profile photo |
+| `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Site icon for browser tabs, bookmarks and phone home screens |
 | `og-image.jpg` | Preview image shown when the link is shared, for example on LinkedIn |
 | `Resume_Ariful_Islam.pdf` | My CV, used by the Download CV buttons |
 
